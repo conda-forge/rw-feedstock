@@ -15,3 +15,7 @@ make
 make check
 make install
 
+if [ -f $PREFIX/share/doc/rw/Hängematte ]; then
+  echo "Changing the unicode file name"
+  mv $PREFIX/share/doc/rw/Hängematte $PREFIX/share/doc/rw/Hangematte
+fi
