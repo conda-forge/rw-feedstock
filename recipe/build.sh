@@ -9,8 +9,7 @@ autoreconf -i
 chmod +x configure
 
 ./configure \
-    --prefix="$PREFIX" \
-   --enable-executable=no
+    --prefix="$PREFIX"
 
 make
 make check

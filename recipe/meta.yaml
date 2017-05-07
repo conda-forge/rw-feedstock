@@ -20,6 +20,11 @@ requirements:
     - libtool
     - automake
     - m4
+    - pkg-config
+    - igraph 0.7.*
+
+  run:
+    - igraph 0.7.*
 
 test:
   commands:
