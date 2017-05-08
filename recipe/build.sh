@@ -5,11 +5,11 @@ export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
 export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 
+autoreconf -i
 chmod +x configure
 
 ./configure \
-    --prefix="$PREFIX" \
-   --enable-executable=no
+    --prefix="$PREFIX"
 
 make
 make check

@@ -1,4 +1,4 @@
-{% set version = "0.7" %}
+{% set version = "0.8" %}
 {% set name = "rw" %}
 
 package:
@@ -8,16 +8,23 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://excellmedia.dl.sourceforge.net/project/rankwidth/{{ name }}-{{ version }}.tar.gz
-  sha256: e049966e5c4f446b639d4b0c40d3ceddd57a79a8890c10dce90614d105d962e7
+  sha256: 60fd5320bef28a5156284fc224534376405f2655c6777a12a05fcacc0576d700
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
   build:
     - toolchain
     - libtool
+    - automake
+    - m4
+    - pkg-config
+    - igraph 0.7.*
+
+  run:
+    - igraph 0.7.*
 
 test:
   commands:
