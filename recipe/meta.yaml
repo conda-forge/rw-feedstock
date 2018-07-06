@@ -11,16 +11,17 @@ source:
   sha256: 60fd5320bef28a5156284fc224534376405f2655c6777a12a05fcacc0576d700
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
   build:
-    - toolchain
     - libtool
     - automake
-    - m4
     - pkg-config
+    - {{ compiler('c') }}
+  host:
+    - m4
     - igraph 0.7.*
 
   run:
