@@ -1,9 +1,10 @@
 #!/bin/bash
 
-export CPPFLAGS="-I$PREFIX/include $CPPFLAGS"
-export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
 export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
+
+# Get rid of any `.la`.
+find $PREFIX/lib -name '*.la' -delete
 
 autoreconf -i
 chmod +x configure
