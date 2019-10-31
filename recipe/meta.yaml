@@ -19,6 +19,7 @@ requirements:
     - libtool
     - automake
     - pkg-config
+    - make
     - {{ compiler('c') }}
   host:
     - m4
