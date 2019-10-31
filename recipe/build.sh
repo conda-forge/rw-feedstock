@@ -1,10 +1,6 @@
 #!/bin/bash
 
-export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
-
-# Get rid of any `.la`.
-find $PREFIX/lib -name '*.la' -delete
 
 autoreconf -i
 chmod +x configure
@@ -12,7 +8,7 @@ chmod +x configure
 ./configure \
     --prefix="$PREFIX"
 
-make
+make -j{$CPU_COUNT}
 make check
 make install
 
