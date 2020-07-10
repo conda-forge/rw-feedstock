@@ -6,8 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://excellmedia.dl.sourceforge.net/project/rankwidth/{{ name }}-{{ version }}.tar.gz
+  url: http://downloads.sourceforge.net/project/rankwidth/rw-{{ version }}.tar.gz
   sha256: 60fd5320bef28a5156284fc224534376405f2655c6777a12a05fcacc0576d700
 
 build:
