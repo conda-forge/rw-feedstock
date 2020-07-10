@@ -5,7 +5,7 @@ Home: https://sourceforge.net/projects/rankwidth/
 
 Package license: GPLv2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: rw calculates rank-width and rank-decompositions
 
@@ -18,15 +18,15 @@ Current build status
 <table><tr>
     <td>Travis</td>
     <td>
-      <a href="https://travis-ci.org/conda-forge/rw-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/conda-forge/rw-feedstock/master.svg?label=macOS">
+      <a href="https://travis-ci.com/conda-forge/rw-feedstock">
+        <img alt="macOS" src="https://img.shields.io/travis/com/conda-forge/rw-feedstock/master.svg?label=macOS">
       </a>
     </td>
   </tr><tr>
     <td>Drone</td>
     <td>
       <a href="https://cloud.drone.io/conda-forge/rw-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/master.svg?label=Linux">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/rw-feedstock/master.svg?label=Linux">
       </a>
     </td>
   </tr>
@@ -127,7 +127,7 @@ A feedstock is made up of a conda recipe (the instructions on what and how to bu
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
+and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
 [Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
