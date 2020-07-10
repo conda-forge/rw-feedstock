@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: http://downloads.sourceforge.net/project/rankwidth/rw-{{ version }}.tar.gz
-  sha256: 60fd5320bef28a5156284fc224534376405f2655c6777a12a05fcacc0576d700
+  url: http://deb.debian.org/debian/pool/main/r/rw/rw_{{ version }}+ds.orig.tar.gz
+  sha256: 86dc09a765fc16d6c2a33943f099e38777513cd7a0d06d5687a9e2014ef42983
 
 build:
   number: 1001
