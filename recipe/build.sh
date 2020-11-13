@@ -2,7 +2,7 @@
 
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 
-autoreconf -i
+autoreconf -if
 chmod +x configure
 
 ./configure \
@@ -10,7 +10,7 @@ chmod +x configure
 
 make -j${CPU_COUNT}
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
-make check
+  make check
 fi
 make install
 
