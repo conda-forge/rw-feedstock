@@ -35,7 +35,7 @@ test:
 
 about:
   home: https://sourceforge.net/projects/rankwidth/
-  license: GPLv2
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: rw calculates rank-width and rank-decompositions
   dev_url: https://sourceforge.net/p/rankwidth/code/HEAD/tree/
