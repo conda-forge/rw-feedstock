@@ -3,7 +3,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: "{{ version }}"
 
 source:
   url: https://sourceforge.net/projects/rankwidth/files/rw-{{ version }}.tar.gz
@@ -21,9 +21,10 @@ requirements:
   build:
     - libtool
     - automake
-    - pkg-config
+    - pkgconf
     - make
     - {{ compiler('c') }}
+    - {{ stdlib('c') }}
   host:
     - m4
     - igraph
