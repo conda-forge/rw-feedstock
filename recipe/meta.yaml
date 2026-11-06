@@ -8,8 +8,6 @@ package:
 source:
   url: https://sourceforge.net/projects/rankwidth/files/rw-{{ version }}.tar.gz
   sha256: 89a8ed364893ac1b70ab70a152e3e7db3cf348bb69098aa6dbb969639df927db
-  patches:
-    - 0001-Adapt-to-igraph-0.10.patch
 
 build:
   number: 0
